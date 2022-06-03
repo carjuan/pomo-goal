@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "root": true,
+  "extends": [
+    "airbnb",
+    "airbnb-base",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["no-for-of-loops", "prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module"
+  },
+  "globals": {
+    "window": "readonly",
+    "document": "readonly"
+  },
+  "rules": {
+    "no-for-of-loops/no-for-of-loops": "error",
+    "import/extensions": ["warn", "always"]
+  }
+}
